@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="es-ES">
-  <head>
-    <title>Formulario</title>
-    <link rel="stylesheet" href="style/estilos.css">
+
+<head>
+  <title>Formulario</title>
+  <link rel="stylesheet" href="style/estilos.css">
 </head>
 
 <body>
@@ -17,18 +18,19 @@
     <input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2">1975-1985</label><br>
     <input type="checkbox" id="cbox3" value="third_checkbox"> <label for="cbox3">1985-1995</label><br>
     <input type="checkbox" id="cbox4" value="forth_checkbox"> <label for="cbox4">1995-2005</label><br>
-    <legend>¿Eres mayor de edad? Solo contestar si has marcado la última opción anterior.</legend>
+    <fieldset>
+      <legend>¿Eres mayor de edad? Solo contestar si has marcado la última opción anterior.</legend>
 
-    <div>
-      <input type="radio" id="si" name="si" value="si" checked>
-      <label for="si">Si</label>
-    </div>
+      <div>
+        <input type="radio" id="si" name="si" value="si" checked>
+        <label for="si">Si</label>
+      </div>
 
-    <div>
-      <input type="radio" id="no" name="no" value="no">
-      <label for="no">No</label>
-    </div>
-  </fieldset>
+      <div>
+        <input type="radio" id="no" name="no" value="no">
+        <label for="no">No</label>
+      </div>
+    </fieldset>
     <hr>
     <p>Sexo</p>
     <select name="select">
@@ -66,7 +68,7 @@
     <textarea id="story" name="story" rows="5" cols="33"></textarea>
     <hr>
     <p>A continuación, selecciona una de las suiguientes zonas de nuestra
-    empresa donde quiera trabajar:</p>
+      empresa donde quiera trabajar:</p>
     <fieldset>
       <legend>Seleciona un sector</legend>
 
@@ -95,6 +97,12 @@
     <label for="story">¿Qué esperas de este trabajo?</label>
     <br>
     <textarea id="story" name="story" rows="5" cols="33"></textarea>
+    <p>¿Cuándo desea trabajar?</p>
+    <input type="checkbox" id="cbox1" value="first_checkbox"> <label>Otoño</label><br>
+    <input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2">Invierno</label><br>
+    <input type="checkbox" id="cbox3" value="third_checkbox"> <label for="cbox3">Primavera</label><br>
+    <input type="checkbox" id="cbox4" value="fourth_checkbox"> <label for="cbox4">Verano</label><br>
+    <input type="checkbox" id="cbox4" value="fifth_checkbox"> <label for="cbox4">Me es indiferente</label><br>
   </form>
 </body>
 
